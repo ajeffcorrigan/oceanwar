@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Ocean War</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.js"></script>
+    <script src="js/loader.js"></script>
+</head>
+<body>
+    <div id="game">
+        <!-- game goes here -->
+        <div class="background"></div>
+        <div class="screen" id="intro-screen">
+            <h1 class="logo">Ocean <br/>War</h1>
+            <div class="progress">
+                <div class="indicator"></div>
+            </div>
+            <span class="continue">Click to continue</span>
+        </div>
+        <div class="screen" id="main-menu">
+            <h2 class="logo">Ocean <br/>War</h2>
+            <ul class="menu">
+                <li><button name="game-screen">Play</button>
+                <li><button name="hiscore">Highscore</button>
+                <li><button name="about">About</button>
+                <li><button name="exit-screen">Exit</button>
+            </ul>
+        </div>
+        <div class="screen" id="game-screen">
+            <div class="game-board"></div>
+        </div>
+        <div class="screen" id="high-scores">
+        </div>
+    </div>
+</body>
+</html>

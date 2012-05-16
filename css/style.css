@@ -1,0 +1,137 @@
+/* Main body */
+body {
+    margin : 0;
+    font-family : Geo;
+    color : rgb(200,200,100);
+}
+
+#game {
+    position : absolute;
+    left : 0;
+    top : 0;
+    background-color : rgb(30,30,30);
+    font-size : 40px;
+    width : 22em;
+    height : 14em;
+}
+
+#game .screen {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    display : none;
+    z-index : 10;
+}
+#game .screen.active {
+    display : block;
+}
+
+/* Game Screen Style */
+#game-screen .game-board .board {
+    z-index : 10;
+}
+
+#game-screen .game-board .board-bg {
+    z-index : 0;
+}
+
+/* Intro Screen */
+#intro-screen {
+    text-align : center;
+    padding-top : 3em;
+}
+#intro-screen .continue {
+    cursor : pointer;
+    font-size : 0.75em;
+    display : none;
+}
+/* Progress bar */
+.progress {
+    margin : 0 auto;
+    width : 6em;
+    height : 0.5em;
+    border-radius : 0.5em;
+    overflow : hidden;
+    border : 1px solid rgb(200,200,100);
+}
+
+.progress .indicator {
+    background-color : rgb(200,200,100);
+    height : 100%;
+    width : 0%;
+}
+
+/* Main Menu Screen */
+#main-menu {
+    display : none;
+}
+/* Main menu styles */
+#main-menu {
+    padding-top : 1em;
+}
+
+ul.menu {
+    text-align : center;
+    padding : 0;
+    margin : 0;
+    list-style : none;
+}
+ul.menu li {
+    margin : 0.8em 0;
+}
+ul.menu li button {
+    font-family : Slackey, sans-serif;
+    font-size : 0.6em;
+    color : rgb(100,120,0);
+    width : 10em;
+    height : 1.5em;
+    background : rgb(10,20,0);
+    border : 0.1em solid rgb(255,255,0);
+    border-radius : 0.5em;
+    -webkit-box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+    -moz-box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+    box-shadow : 0.2em 0.2em 0.3em rgb(0,0,0);
+}
+ul.menu li button:hover {
+    background : rgb(30,40,0);
+}
+ul.menu li button:active {
+    color : rgb(255,255,0);
+    background : rgb(30,40,0);
+}
+
+/* Logo */
+.logo {
+    font-family : ArmaliteRifleRegular;
+    font-size : 2.5em;
+    line-height : 0.9em;
+    margin : 0;
+    text-align : center;
+    color : rgb(61, 145, 202);
+    text-shadow : 0.03em  0.03em 0.03em rgb(45,85,111),
+                 -0.03em -0.03em 0.03em rgb(45,85,111),
+                  0.10em  0.15em 0.15em rgb(0,0,0);
+    z-index : 10;
+}
+
+#game .background {
+    position : absolute;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 100%;
+    z-index : 0;
+}
+
+/* Font Faces */
+@font-face {
+    font-family: 'ArmaliteRifleRegular';
+    src: url('../fonts/armalite_rifle-webfont.eot');
+    src: url('../fonts/armalite_rifle-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/armalite_rifle-webfont.woff') format('woff'),
+         url('../fonts/armalite_rifle-webfont.ttf') format('truetype'),
+         url('../fonts/armalite_rifle-webfont.svg#ArmaliteRifleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
